@@ -1,0 +1,71 @@
+.center {
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+/* Website Theme Color */
+.theme {
+  color: #c10f3a;
+}
+/* End Theme */
+
+
+
+/* All page Background Settings. */
+.BColor, .TColor {
+  background-color: black;
+  color: white;
+}
+
+/*.TColor {
+
+}*/
+
+.BImg {
+  background-image: url("../img/showcase.jpg");
+  background-position: top;
+}
+/* End Background */
+
+.logo {
+  font-size: 32px;
+}
+
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+a .icons {
+  color: #3a9fbf;
+}
+
+a:hover .icons {
+  color: #2e7f97;
+}
+
+.pointer {
+  padding-right: 280px;
+  color: #3a9fbf;
+  rotation: 15;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+#particles-js{
+  height: 100%;
+}

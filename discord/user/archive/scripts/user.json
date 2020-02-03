@@ -1,0 +1,32 @@
+{
+	"users": {
+		"TylerHollySeanAziz": {
+			"discord": "@TylerHollySeanAziz",
+			"tag": "#5398",
+			"userID": "N/A",
+			"infractions": 0,
+			"twitter": {
+				"enable": false,
+				"username": "N/A"
+			},
+			"instagram": {
+				"enable": false,
+				"username": "N/A"
+			}
+		},
+		"test": {
+			"discord": "@TylerHollySeanAziz",
+			"tag": "#5398",
+			"userID": "N/A",
+			"infractions": 0,
+			"twitter": {
+				"enable": false,
+				"username": "N/A"
+			},
+			"instagram": {
+				"enable": false,
+				"username": "N/A"
+			}
+		}
+	}
+}

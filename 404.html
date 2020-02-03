@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <meta name="author" content="Zoey Rad">
+      <title>404 Page Unfound | Lost in Rapture</title>
+      <link rel="stylesheet" href="/css/style.css">
+      <link href="https://fonts.googleapis.com/css?family=Wallpoet" rel="stylesheet"
+
+</head>
+<style>
+.logo {
+  font-family: Wallpoet;
+}
+
+.icons {
+  font-size:40px;
+}
+
+.icons button {
+  background-color:#3a9fbf;
+  font-size: 46px;
+  border: black;
+  border-radius:8px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.19);
+  font-family: Wallpoet;
+}
+.icons button:hover {
+  background-color:#2e7f97;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+</style>
+
+  <body class="BColor TColor BImg">
+    <header>
+      <div class="center">
+        <div class="logo">
+
+          <h1 class="move1">oops!</h1>
+          <h1 class=" move2">404 Page Unfound.</h1>
+
+        </div>
+
+        <div class="move2, icons">
+          <button onclick="goBack()">Go Back</button>
+        </div>
+
+      </div>
+    </header>
+  </body>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/easing/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineLite.min.js"></script>
+    <script>
+
+    var tl = new TimelineLite();
+    tl.timeScale(2);
+    tl.add('move2', 8);
+    tl.from('.logo', 3, {ease: Power2.easeOut, y:-150, opacity:0});
+    tl.staggerFrom('.icons', 2, {ease: Power2.easeOut, opacity:0, scale:.5, y:-50}, .5);
+    tl.to('.move1', 3, {ease: Power2.easeOut, opacity:0, scale:.7, y:-100}, 'move2');
+    tl.to('.move2', 3, {ease: Power2.easeOut, scale:.85}, 'move2');
+
+
+
+    function goBack() {
+        window.history.back();
+    }
+    </script>
+
+</html>

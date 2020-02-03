@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135963738-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-135963738-1');
+        </script>
+  <!-- END Global site tag (gtag.js) - Google Analytics -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="We are streamers, gamers, content creators, a charity team. But most importantly, we are entertainers.">
+    <meta name="keywords" content="stream, streamers, game, gamer, content, creators, charity, team, entertainers, content, gaming">
+    <meta name="author" content="Zoey Rad">
+    <title>Rapture Lab | Welcome to Rapture</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/v4-shims.css">
+    <script src="./scripts/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<div id="particles-js"></div>
+<audio autoplay>
+  <source src="./Audio/SleighBells.mp3" type"audio/mpeg">
+</audio>
+
+  <body class="BColor TColor BImg">
+
+
+
+    <header>
+      <div class="center">
+        <div class="logo">
+
+          <h1 class="move1">Welcome to:</h1>
+          <h1 class=" move2">Rapture<span class="theme">Lab</span></h1>
+
+        </div>
+        <div class="move2">
+          <a  href="https://discord.gg/8nhrENG" target="_blank"> <i class="icons fab fa-discord" aria-hidden="true" style="font-size:60px"></i></a>
+          <a  href="https://www.twitch.tv/rapturelab" target="_blank"> <i class="icons fa fa-twitch" aria-hidden="true" style="font-size:60px"></i></a>
+          <a  href="https://www.youtube.com/channel/UC9GPFyuc2vDHdMbhCe_bvfQ" target="_blank"> <i class="icons fa fa-youtube-play" aria-hidden="true" style="font-size:60px"></i></a>
+        </div>
+        <div class="move2">
+        <a  href="https://twitter.com/RaptureLab" target="_blank"> <i class="icons fa fa-twitter" aria-hidden="true" style="font-size:60px"></i></a>
+        <a  href="https://www.instagram.com/rapturelabs/" target="_blank"> <i class="icons fa fa-instagram" aria-hidden="true" style="font-size:60px"></i></a>
+          <!-- <a  href="https://blog.rapturelab.net" target="_blank"> <i class="icons fab fa-wordpress" aria-hidden="true" style="font-size:60px"></i></a> -->
+        </div>
+        <!-- <div class="pointer">
+          <h2>Hey! Check out our new blog! <span class="arrow"><img src="./img/Arrow.png"></span></h2>
+
+        </div> -->
+      </div>
+
+    </header>
+  </body>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/easing/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineLite.min.js"></script>
+    <script>
+
+    var tl = new TimelineLite();
+    tl.timeScale(1);
+    tl.add('move2', 8);
+    tl.add('move3', 10);
+    tl.from('.logo', 3, {ease: Power2.easeOut, y:-150, opacity:0});
+    tl.staggerFrom('.icons', 2, {ease: Power2.easeOut, opacity:0, scale:.5, y:-50}, .5);
+    tl.to('.move1', 1, {ease: Power2.easeOut, opacity:0, scale:.7, y:-100}, 'move2');
+    tl.to('.move2', 3, {ease: Power2.easeOut, scale:.85}, 'move2');
+    tl.fromTo('.pointer', 3, {ease: Power2.easeOut, opacity:0, rotation:20, scale:.65}, {ease: Bounce.easeOut, opacity:100, rotation:3, scale:.95});
+
+    particlesJS.load('particles-js', './scripts/particles.json', function(){console.log('Particles Loaded!'),console.log('Have a Merry Christmas!')});
+
+    console.log('Rapture Version: 0.1.5')
+    </script>
+
+</html>
